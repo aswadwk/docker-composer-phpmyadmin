@@ -2,10 +2,10 @@ version: "3.9" # optional since v1.27.0
 
 services:
   db:
-    image: mariadb
+    image: mysql
     restart: always
     environment:
-      MARIADB_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
     ports:
       - "3306:3306"
     volumes:
